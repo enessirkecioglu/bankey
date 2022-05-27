@@ -14,6 +14,10 @@
 		8918D4DF283AD17F0040CFDB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918D4DE283AD17F0040CFDB /* LoginView.swift */; };
 		897DE7C7284021280069DECB /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DE7C6284021280069DECB /* OnboardingContainerViewController.swift */; };
 		899A204C28413CD80000899E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A204B28413CD80000899E /* OnboardingViewController.swift */; };
+		899A204E284154B10000899E /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A204D284154B10000899E /* DummyViewController.swift */; };
+		899A205128415A860000899E /* LocaleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A205028415A860000899E /* LocaleState.swift */; };
+		899A205528415EF10000899E /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A205428415EF10000899E /* UIViewController+Utils.swift */; };
+		899A2057284160310000899E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A2056284160310000899E /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		8918D4DE283AD17F0040CFDB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		897DE7C6284021280069DECB /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		899A204B28413CD80000899E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		899A204D284154B10000899E /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		899A205028415A860000899E /* LocaleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleState.swift; sourceTree = "<group>"; };
+		899A205428415EF10000899E /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		899A2056284160310000899E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,12 @@
 		8918D4C7283ACCF20040CFDB /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				897DE7C5284020BE0069DECB /* Onboarding */,
-				8918D4DD283AD1540040CFDB /* Login */,
 				8918D4C8283ACCF20040CFDB /* AppDelegate.swift */,
+				8918D4DD283AD1540040CFDB /* Login */,
+				897DE7C5284020BE0069DECB /* Onboarding */,
+				899A204F28415A760000899E /* Utils */,
 				8918D4DC283ACF800040CFDB /* Files */,
+				899A2056284160310000899E /* MainViewController.swift */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -81,6 +91,7 @@
 			children = (
 				8918D4CC283ACCF20040CFDB /* LoginViewController.swift */,
 				8918D4DE283AD17F0040CFDB /* LoginView.swift */,
+				899A204D284154B10000899E /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -92,6 +103,15 @@
 				899A204B28413CD80000899E /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		899A204F28415A760000899E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				899A205028415A860000899E /* LocaleState.swift */,
+				899A205428415EF10000899E /* UIViewController+Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899A205528415EF10000899E /* UIViewController+Utils.swift in Sources */,
 				8918D4DF283AD17F0040CFDB /* LoginView.swift in Sources */,
+				899A205128415A860000899E /* LocaleState.swift in Sources */,
+				899A204E284154B10000899E /* DummyViewController.swift in Sources */,
 				8918D4CD283ACCF20040CFDB /* LoginViewController.swift in Sources */,
 				899A204C28413CD80000899E /* OnboardingViewController.swift in Sources */,
+				899A2057284160310000899E /* MainViewController.swift in Sources */,
 				8918D4C9283ACCF20040CFDB /* AppDelegate.swift in Sources */,
 				897DE7C7284021280069DECB /* OnboardingContainerViewController.swift in Sources */,
 			);
