@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
-    let dummyViewController = DummyViewController()
     let mainViewController = MainViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
@@ -27,9 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         loginViewController.delegate = self
         onboardingContainerViewController.delegate = self
-        dummyViewController.logoutDelegate = self
     
-        window?.rootViewController = mainViewController
+//        window?.rootViewController = mainViewController
+        window?.rootViewController = AccountSummaryViewController()
         
         mainViewController.selectedIndex = 1
         
@@ -59,7 +58,7 @@ extension AppDelegate {
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
         if LocaleState.hasOnboarded {
-            setRootViewController(dummyViewController)
+            setRootViewController(mainViewController)
         } else {
             setRootViewController(onboardingContainerViewController)
         }
@@ -69,7 +68,7 @@ extension AppDelegate: LoginViewControllerDelegate {
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocaleState.hasOnboarded = true
-        setRootViewController(dummyViewController)
+        setRootViewController(mainViewController)
     }
 }
 
