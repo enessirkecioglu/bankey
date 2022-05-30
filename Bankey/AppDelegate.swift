@@ -27,10 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         loginViewController.delegate = self
         onboardingContainerViewController.delegate = self
     
-//        window?.rootViewController = mainViewController
-        window?.rootViewController = AccountSummaryViewController()
+        let vc = mainViewController
+        vc.setStatusBar()
         
-        mainViewController.selectedIndex = 1
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = appColor
+        
+        window?.rootViewController = vc
         
         return true
     }
