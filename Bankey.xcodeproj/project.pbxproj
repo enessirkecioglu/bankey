@@ -17,6 +17,7 @@
 		8918D4D2283ACCF30040CFDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8918D4D1283ACCF30040CFDB /* Assets.xcassets */; };
 		8918D4D5283ACCF30040CFDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8918D4D3283ACCF30040CFDB /* LaunchScreen.storyboard */; };
 		8918D4DF283AD17F0040CFDB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918D4DE283AD17F0040CFDB /* LoginView.swift */; };
+		89318616284955E600CD94B8 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89318615284955E600CD94B8 /* ShakeyBellView.swift */; };
 		897DE7C7284021280069DECB /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DE7C6284021280069DECB /* OnboardingContainerViewController.swift */; };
 		8990ACCA28441233001270CC /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990ACC928441233001270CC /* Decimal+Utils.swift */; };
 		8990ACCC28441297001270CC /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990ACCB28441297001270CC /* CurrencyFormatter.swift */; };
@@ -51,6 +52,7 @@
 		8918D4D4283ACCF30040CFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8918D4D6283ACCF30040CFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8918D4DE283AD17F0040CFDB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		89318615284955E600CD94B8 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		897DE7C6284021280069DECB /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		8990ACC928441233001270CC /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		8990ACCB28441297001270CC /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				897DE7C5284020BE0069DECB /* Onboarding */,
 				890CA60D28422D1700BF0900 /* AccountSummary */,
 				899A204F28415A760000899E /* Utils */,
+				89318614284955C500CD94B8 /* Components */,
 				8918D4DC283ACF800040CFDB /* Files */,
 				899A2056284160310000899E /* MainViewController.swift */,
 			);
@@ -140,6 +143,14 @@
 				8918D4DE283AD17F0040CFDB /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		89318614284955C500CD94B8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				89318615284955E600CD94B8 /* ShakeyBellView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		897DE7C5284020BE0069DECB /* Onboarding */ = {
@@ -305,6 +316,7 @@
 				890CA60F28422D3800BF0900 /* AccountSummaryViewController.swift in Sources */,
 				8990ACCA28441233001270CC /* Decimal+Utils.swift in Sources */,
 				8918D4C9283ACCF20040CFDB /* AppDelegate.swift in Sources */,
+				89318616284955E600CD94B8 /* ShakeyBellView.swift in Sources */,
 				897DE7C7284021280069DECB /* OnboardingContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
