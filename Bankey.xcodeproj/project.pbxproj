@@ -32,6 +32,8 @@
 		899A205528415EF10000899E /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A205428415EF10000899E /* UIViewController+Utils.swift */; };
 		899A2057284160310000899E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A2056284160310000899E /* MainViewController.swift */; };
 		899BDCAA2842B6E800241A0D /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899BDCA92842B6E800241A0D /* AccountSummaryCell.swift */; };
+		89A5C39328562DC4004C96CC /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A5C39228562DC4004C96CC /* ProfileManager.swift */; };
+		89A5C39528563003004C96CC /* AccountSummarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A5C39428563003004C96CC /* AccountSummarViewControllerTests.swift */; };
 		89D2AA5328455D19002F94B3 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2AA5228455D19002F94B3 /* CurrencyFormatterTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,8 @@
 		899A205428415EF10000899E /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		899A2056284160310000899E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		899BDCA92842B6E800241A0D /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
+		89A5C39228562DC4004C96CC /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		89A5C39428563003004C96CC /* AccountSummarViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummarViewControllerTests.swift; sourceTree = "<group>"; };
 		89D2AA4928455C34002F94B3 /* BankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D2AA5228455D19002F94B3 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +106,7 @@
 				89232CD2284BB2B60019A7B5 /* AccountSummaryViewController+Networking.swift */,
 				899BDCA72842B6A500241A0D /* Header */,
 				899BDCA82842B6BC00241A0D /* Cells */,
+				89A5C39128562DA7004C96CC /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			children = (
 				89232CD6284BBB320019A7B5 /* ProfileTests.swift */,
 				89232CDB284BBC1C0019A7B5 /* AccountTests.swift */,
+				89A5C39428563003004C96CC /* AccountSummarViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -223,6 +229,14 @@
 				89535660284E7DD0005DC067 /* SkeletonCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		89A5C39128562DA7004C96CC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				89A5C39228562DC4004C96CC /* ProfileManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		89D2AA4A28455C34002F94B3 /* BankeyUnitTests */ = {
@@ -346,6 +360,7 @@
 				89232CD3284BB2B60019A7B5 /* AccountSummaryViewController+Networking.swift in Sources */,
 				8918D4CD283ACCF20040CFDB /* LoginViewController.swift in Sources */,
 				8990ACCC28441297001270CC /* CurrencyFormatter.swift in Sources */,
+				89A5C39328562DC4004C96CC /* ProfileManager.swift in Sources */,
 				89535661284E7DD0005DC067 /* SkeletonCell.swift in Sources */,
 				8953565F284E7CF4005DC067 /* SkeletonLoadable.swift in Sources */,
 				899A204C28413CD80000899E /* OnboardingViewController.swift in Sources */,
@@ -364,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D2AA5328455D19002F94B3 /* CurrencyFormatterTests.swift in Sources */,
+				89A5C39528563003004C96CC /* AccountSummarViewControllerTests.swift in Sources */,
 				89232CDC284BBC1C0019A7B5 /* AccountTests.swift in Sources */,
 				89232CD7284BBB320019A7B5 /* ProfileTests.swift in Sources */,
 			);
